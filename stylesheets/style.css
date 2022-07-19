@@ -346,6 +346,10 @@ footer h2 {
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.footer-menu ul li a:hover{
+    color: #DD0000;
 }
 .social-icons{
     display: flex;
