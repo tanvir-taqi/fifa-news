@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ========================= banner style =======================  */
+
+.top-banner{
+    display: flex;
+    width: 1321px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 80px 0 80px;
+   background-color:  #161616;
+   border-radius: 30px;
+   
+
+}
+
+.banner-content{
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.banner-title{
+    font-weight: 700;
+font-size: 70px;
+line-height: 80px;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+
+.banner-text{
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #FFFFFF;
+margin-bottom: 30px;
+}
+
+.banner-btn{
+    text-decoration: none;
+    background: #DD0000;
+border-radius: 5px;
+color: #FFFFFF;
+font-size: 20px;
+width: 187px;
+padding: 15px 20px;
+text-align: center;
+transition: all 0.7s ease-in-out;
+}
+.banner-btn:hover{
+    color: #DD0000;
+    background: #FFFFFF;
+}
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
+    
+}
+
+@keyframes playermove {
+    0%{
+        
+       
+        transform: translateX(8px);
+    }
+    50%{
+        
+       
+        transform: translateX(-8px);
+        transform: translateY(3px);
+    }
+    100%{
+        
+        transform: translateX(8px);
+    }
+}
+
+.top-banner:hover .banner-img {
+    animation: playermove infinite 01s ease-in-out;
+}
+ .top-banner:hover .banner-title::after{
+    content: " ";
+    border-left: 1px solid #FFFFFF;
+    animation: writer infinite 1s ease-in-out;
+}
+
+@keyframes writer {
+    0%{
+        border-left: 1px solid #FFFFFF;
+
+    }
+    50%{
+        border: none;
+
+    }
+    100%{
+        border-left: 1px solid #FFFFFF;
+
+    }
+ }
+
+
+@media screen and (max-width:576px){
+    .top-banner{
+        flex-direction: column;
+        width: 300px;
+        margin: 10px;
+        padding: 0;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+    }
+    .banner-text{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .banner-btn{
+        width: 150px;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width:577px) and (max-width:992px){
+.top-banner{
+    width: 760px;
+    flex-direction: row;
+}
+.banner-title{
+    font-size: 40px;
+    line-height: 50px;
+}
+.banner-text{
+    font-size: 14px;
+line-height: 24px;
+}
+.banner-btn{
+    width: 150px;
+}
+}
