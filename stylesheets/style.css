@@ -62,8 +62,11 @@ line-height: 26px;
 color: #FFFFFF;
 margin-bottom: 30px;
 }
+.tooltip{
+    visibility: hidden;
+}
 
-.banner-btn{
+.banner-btn ,.viewmore{
     text-decoration: none;
     background: #DD0000;
 border-radius: 5px;
@@ -138,6 +141,7 @@ transition: all 0.7s ease-in-out;
     }
     .banner-content{
         width: 100%;
+       
 
     }
     .banner-title{
@@ -151,12 +155,13 @@ transition: all 0.7s ease-in-out;
         text-align: center;
     }
     .banner-btn{
-        width: 150px;
+        width: 200px;
         margin: auto;
     }
     .banner-img{
         width: 100%;
     }
+    
     
 }
 @media screen and (min-width:577px) and (max-width:992px){
@@ -260,7 +265,9 @@ line-height: 24px;
 .blog-icons p span{
     margin-right: 15px;
 }
-
+.viewmore{
+    display: none;
+}
 @media screen and (max-width:576px){
     .blog-section,.upcoming-section{
         width: 300px;
@@ -290,6 +297,14 @@ line-height: 24px;
     }
     .blogs , .matchcard{
         grid-template-columns: repeat(2,1fr);
+    }
+    .viewmore{
+        
+        display: block;
+        
+    }
+    .no-display{
+        display: none;
     }
 }
 
@@ -331,6 +346,24 @@ footer h2 {
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons a{
+    text-decoration: none;
+    color: #DD0000;
+    margin: 20px;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.social-icons a:hover{
+    background-color: #dd00002d;
+    color: #B9B9B9;
+    
+    
 }
 @media screen and (max-width:576px){
     footer{
