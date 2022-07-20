@@ -230,10 +230,21 @@ line-height: 24px;
     background-color: #DD0000;
     color: #FFFFFF;
 }
+.blogs-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
 .blogs , .matchcard{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
+}
+.blog , .card{
+    border: 1px solid #b9b9b967;
+    border-radius: 10px;
+    padding: 10px;
 }
 .blog-img{
     width: 100%;
@@ -288,6 +299,9 @@ line-height: 24px;
     .blogs , .matchcard{
         grid-template-columns: repeat(1,1fr);
     }
+    .text-no-display{
+        display: none;
+    }
 }
 @media screen and (min-width:577px) and (max-width:1144px){
     .blog-section,.upcoming-section{
@@ -307,6 +321,7 @@ line-height: 24px;
     .viewmore{
         
         display: block;
+        margin: 20px auto;
         
     }
     .no-display{
