@@ -20,6 +20,7 @@
 body{
     max-width: 1500px;
     margin: 0 auto;
+   
 }
 
 
@@ -287,7 +288,7 @@ line-height: 24px;
         grid-template-columns: repeat(1,1fr);
     }
 }
-@media screen and (min-width:577px) and (max-width:992px){
+@media screen and (min-width:577px) and (max-width:1144px){
     .blog-section,.upcoming-section{
         width: 577px;
         flex-direction: column;
@@ -413,7 +414,11 @@ footer h2 {
     grid-row-gap: 60px;
     justify-content: center;
     align-items: center;
+   
     margin: 0 auto;
+    
+}
+@media screen {
     
 }
 
