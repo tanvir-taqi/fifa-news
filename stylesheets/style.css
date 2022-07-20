@@ -17,6 +17,10 @@
    
 
 }
+body{
+    max-width: 1500px;
+    margin: 0 auto;
+}
 
 
 
@@ -25,7 +29,7 @@
 
 .top-banner{
     display: flex;
-    width: 1321px;
+    max-width: 1321px;
     margin: 20px auto;
     justify-content: center;
     align-items: center;
@@ -187,7 +191,7 @@ line-height: 24px;
 
 .blog-section , .upcoming-section{
     display: flex;
-    width: 1321px;
+    max-width: 1321px;
     margin: 20px auto;
    
 }
@@ -311,8 +315,9 @@ line-height: 24px;
 /* ====================================footer style ===========================  */
 
 footer{
-    /* width: 100%; */
+    width: 100%;
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -377,7 +382,7 @@ footer h2 {
 }
 @media screen and (max-width:576px){
     footer{
-        /* width: 100%; */
+        /* width: 100vw; */
         margin:auto;
     }
     .footer-menu ul li{
@@ -390,7 +395,7 @@ footer h2 {
 }
 @media screen and (min-width:577px) and (max-width:992px){
     footer{
-        /* width: 100%; */
+        /* width: 100vw; */
         margin:auto;
     }
     .footer-menu ul{
@@ -399,10 +404,12 @@ footer h2 {
     }
 }
 
+
+
 /* =============================== matchcard style ======================== */
 
 .matchcard{
-    grid-column-gap: 30px;
+    grid-column-gap: 20px;
     grid-row-gap: 60px;
     justify-content: center;
     align-items: center;
@@ -412,19 +419,24 @@ footer h2 {
 .card{
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
    
     
 }
 .flags{
     display: flex;
     align-items: center;
+    justify-content: center;
 
+}
+.flags img {
+    width: 100px;
 }
 .vs{
     font-size: 24px;
     color: #161616;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 .nametime{
     display: flex;
