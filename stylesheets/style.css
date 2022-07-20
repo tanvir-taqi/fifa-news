@@ -166,7 +166,7 @@ transition: all 0.7s ease-in-out;
 }
 @media screen and (min-width:577px) and (max-width:992px){
 .top-banner{
-    width: 760px;
+    width: 577px;
     flex-direction: row;
 
 }
@@ -179,7 +179,7 @@ transition: all 0.7s ease-in-out;
 line-height: 24px;
 }
 .banner-btn{
-    width: 150px;
+    width: 180px;
 }
 }
 
@@ -285,7 +285,7 @@ line-height: 24px;
 }
 @media screen and (min-width:577px) and (max-width:992px){
     .blog-section,.upcoming-section{
-        width: 760px;
+        width: 577px;
         flex-direction: column;
         
     }
@@ -311,13 +311,14 @@ line-height: 24px;
 /* ====================================footer style ===========================  */
 
 footer{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #161616;
     padding: 70px;
+    
     
    
 }
@@ -327,6 +328,7 @@ footer h2 {
     line-height: 60px;
     color: #FFFFFF;
 }
+
 .underline {
     width: 75%;
     border-bottom: 1px solid #B9B9B9;
@@ -336,10 +338,14 @@ footer h2 {
 .footer-menu ul{
     display: flex;
     align-items: center;
+    justify-content: center;
+   
+   
 }
 .footer-menu ul li{
     list-style: none;
-    margin: 30px;
+    margin: 40px;
+    
 }
 .footer-menu ul li a {
     color: #B9B9B9;
@@ -371,7 +377,7 @@ footer h2 {
 }
 @media screen and (max-width:576px){
     footer{
-        width: 100%;
+        /* width: 100%; */
         margin:auto;
     }
     .footer-menu ul li{
@@ -384,12 +390,16 @@ footer h2 {
 }
 @media screen and (min-width:577px) and (max-width:992px){
     footer{
-        width: 100%;
+        /* width: 100%; */
         margin:auto;
+    }
+    .footer-menu ul{
+        flex-wrap: wrap;
+        
     }
 }
 
-/* ============================ matchcard style ==================== */
+/* =============================== matchcard style ======================== */
 
 .matchcard{
     grid-column-gap: 30px;
